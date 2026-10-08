@@ -1,0 +1,15 @@
+build --cxxopt=-std=c++23
+build --cxxopt=-Wall
+build --cxxopt=-Wextra
+build --cxxopt=-Wshadow
+
+build --macos_minimum_os=11.0
+
+build --compilation_mode=opt
+
+build --copt=-fsanitize=address,undefined
+build --copt=-fno-sanitize-recover=all
+build --linkopt=-fsanitize=address,undefined
+
+test --test_output=errors
+test --keep_going

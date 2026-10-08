@@ -1,0 +1,8 @@
+load("//tools:problem.bzl", "cses_problem")
+
+cses_problem(
+    name = "1745_money_sums",
+    srcs = ["main.cpp"],
+    sample_inputs = glob(["samples/*.in"]),
+    sample_outputs = glob(["samples/*.out"]),
+)
